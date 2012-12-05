@@ -2,13 +2,16 @@
 // Load DB constants
 require('../config/db.php');
 
+//initialize session
+session_start();
+
 // Connect DB
 $conn = new mysqli('localhost',DB_USERNAME,DB_PASSWORD,DB_NAME);
 
 // Construct 
 extract($_POST);
 
-$sql = "UPDATE posts SET post_title='$post_title', post_text='$post_text', WHERE post_id=$post_id";
+$sql = "UPDATE posts SET post_title='$post_title', post_text='$post_text', WHERE post_id=$post_id ";
 
 // Execute 
 $conn->query($sql);

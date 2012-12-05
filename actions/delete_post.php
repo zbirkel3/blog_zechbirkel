@@ -14,6 +14,7 @@ $post = $result->fetch_assoc();
 extract($post);
 
 // Construct query
+$sql=addslashes($sql);
 $sql = 'DELETE FROM posts WHERE post_id='.$_GET['id'];
 
 //Execute query
@@ -28,7 +29,7 @@ if($conn->error != '') {
 	echo '</pre>';
 } else {
 	// Redirect
-	header('Location:../?p=list_posts');
+	header('Location:../?p=admin/list_posts');
 }
 	
 // Close DB connection

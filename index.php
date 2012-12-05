@@ -1,5 +1,6 @@
 <?php 
-
+// Load DB constants
+require('./config/db.php');
 ?>
 <!DOCTYPE html>
 <html>

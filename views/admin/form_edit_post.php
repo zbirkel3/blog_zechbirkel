@@ -15,7 +15,7 @@ $post = $results->fetch_assoc();
 $conn->close();
 ?>
 <h2>Edit band</h2>
-<form class="form-horizontal" action="actions/add_post.php" method="post">
+<form class="form-horizontal" action="actions/edit_post.php" method="post">
 
 	<div class="control-group">
 		<label class="control-label" for="post_title">Post Title</label>
