@@ -1,6 +1,23 @@
+/*nav*/
+.container li:hover {
+	background-color:rgba(102, 153, 102, 0.5);
+}
+/*posts in home and list_posts*/
 div#post {
 	margin: 50px 10px 20px 00px;
 	border-top: 1px solid #D9D9D9;
+}
+
+#post a {
+	color: #000;
+}
+
+#post a h2 {
+	color: #777;
+}
+
+#post a:hover {
+	text-decoration: none;
 }
 
 div#list {
@@ -8,8 +25,20 @@ div#list {
 	margin-left: 250px;
 }
 
+/*footer*/
 footer {
 	margin-top:20px;
 	margin-bottom: 50px;
 	text-align: center;
 }
+
+/*form styles in add and edit */
+.controls input{
+	width: 300px;
+}
+
+.controls textarea{
+	width: 300px;
+	height: 150px;
+}
+

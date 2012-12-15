@@ -1,6 +1,13 @@
 <?php
+//initialize session
+session_start();
+
 //extract post data
 extract($_POST);
+
+//store the form data entered into session data
+$_SESSION['post_title'] = $post_title;
+$_SESSION['post_text'] = $post_text;
 
 //db constants (login to data base with db.php in config)
 require('../config/db.php');
@@ -30,7 +37,7 @@ if($conn->error != '') {
 }
 
 //redirect
-header('Location:../?p=admin/list_posts');
+header('Location:../?p=public/home');
 
 //close connection
 $conn->close();

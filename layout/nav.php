@@ -2,10 +2,11 @@
 	<div class="navbar-inner">
 		<div class="container">
        			<!-- icon next to home diresting to home  -->
-			<a href="./" class="brand">BLOG NAME HERE</a>
+			<a href="./?p=public/home" class="brand">BLOG NAME HERE</a>
 			<ul class="nav">
-				<li><a href="./">Home</a></li>
+				<li><a href="./?p=public/home">Home</a></li>
 				<li><a href="./?p=admin/form_add_post">Post</a></li>
+				<li><a href="./?p=admin/list_posts">Admin</a></li>
 			</ul>
 		</div>
 	</div>

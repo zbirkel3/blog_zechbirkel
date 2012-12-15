@@ -8,7 +8,7 @@ require('./config/db.php');
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
 		
-		<title></title>
+		<title>BLOG</title>
 	</head>
 	<body>
 		<div id="wrapper">

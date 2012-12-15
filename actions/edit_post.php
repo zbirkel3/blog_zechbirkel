@@ -10,8 +10,9 @@ $conn = new mysqli('localhost',DB_USERNAME,DB_PASSWORD,DB_NAME);
 
 // Construct 
 extract($_POST);
-
-$sql = "UPDATE posts SET post_title='$post_title', post_text='$post_text', WHERE post_id=$post_id ";
+$post_title=addslashes($post_title);
+$post_text=addslashes($post_text);
+$sql = "UPDATE posts SET post_title='$post_title', post_text='$post_text' WHERE post_id=$post_id";
 
 // Execute 
 $conn->query($sql);
@@ -25,7 +26,7 @@ if($conn->error != '') {
 	echo '</pre>';
 } else {
 	// redirect
-	header('Location:../?p=select_bands');
+	header('Location:../?p=public/home');
 }
 
 // close
