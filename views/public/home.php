@@ -1,4 +1,3 @@
-<?php echo 'HOME.php'?>
 <?php
 
 // Connect to the database
@@ -16,17 +15,24 @@ $sql = "SELECT * FROM posts ORDER BY post_datepublished DESC";
 
 // Execute the query
 $results = $conn->query($sql);
+
+// Display first post
+$post = $results->fetch_assoc();
+extract($post);
+echo '<div id="post">';
+echo "<h2><a href='./?p=public/home'>$post_title</h2>";
+echo "<p>$post_text</p>";
+echo "</a>";
+echo '</div>';
+//display the rest of the titles
 echo '<div id="list">';
 while($post = $results->fetch_assoc()):
 	extract($post);
 	echo "<a href='./?p=public/home'>";
 	echo '<div id="post">';
-	echo "<h2>$post_title</h2>"; 
-	echo "<p>$post_text</p>"; 
+	echo "<h2>$post_title</h2>";
 	echo "</a>";
 	echo '</div>';
-	?>
-<?php 
 endwhile;
 echo '</div>';
 ?>

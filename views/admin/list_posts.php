@@ -1,4 +1,3 @@
-<?php echo 'LIST_POSTS.php';?>
 <?php
 
 // Connect to the database
@@ -21,7 +20,7 @@ while($post = $results->fetch_assoc()):
 	extract($post);
 	echo '<div id="post">';
 	echo "<h2>$post_title</h2>"; 
-	echo "<p>$post_text</p>"; 
+	echo "<p>$post_datepublished</p>"; 
 	?>
 	<a class="btn btn-warning btn-mini" title="EDIT" href="./?p=admin/form_edit_post&amp;id=<?php echo $post_id ?>"><i class="icon-edit icon-white"></i></a> 
 	<a class="btn btn-danger btn-mini" title="DELETE" href="actions/delete_post.php?id=<?php echo $post_id ?>"><i class="icon-trash icon-white"></i></a>
