@@ -23,9 +23,49 @@ div#post {
 
 #post a:hover {
 	text-decoration: none;
+	color: #666;
 }
 
+#content {
+	width: 90%;
+}
 
+#list a h2 {
+	color: #777;
+}
+
+#list a h2:hover {
+	color: #666;	
+}
+
+#list #post:hover {
+	background-color: #F3EEEE;
+}
+
+#post:hover {
+	background-color: #F3EEEE;
+}
+
+a.listed-post h2 {
+	margin: 50px 10px 20px 250px;
+	border-top: 1px solid #D9D9D9;
+	color: #777;
+}
+
+a.listed-post h2:hover {
+	color: #666;
+	background-color: #F3EEEE;
+	
+}
+
+a.listed-post:hover {
+	text-decoration: none;
+}
+
+#post-single {
+	margin: 50px 10px 50px 250px;
+	color:#777;
+}
 
 /*footer*/
 footer {

@@ -28,8 +28,8 @@ echo '</div>';
 echo '<div id="list">';
 while($post = $results->fetch_assoc()):
 	extract($post);
-	echo "<a href='./?p=public/home'>";
-	echo '<div id="post">';
+	echo "<a href='./?p=public/post&id=$post_id'";
+	echo '<div class="listed-post">';
 	echo "<h2>$post_title</h2>";
 	echo "</a>";
 	echo '</div>';

@@ -12,3 +12,8 @@ $results = $conn->query($sql);
 // Display post
 $post = $results->fetch_assoc();
 extract($post);
+echo '<div id="post-single">';
+echo "<h2>$post_title</h2>";
+echo "<p>$post_text</p>";
+echo '</div>';
+?>
