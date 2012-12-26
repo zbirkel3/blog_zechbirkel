@@ -3,6 +3,10 @@
 	background-color:rgba(102, 153, 102, 0.5);
 }
 /*posts in home and list_posts*/
+#wrapper{
+	width: 90%;
+}
+
 div#post {
 	margin: 50px 10px 20px 250px;
 	border-top: 1px solid #D9D9D9;
@@ -45,6 +49,7 @@ div#post {
 #post:hover {
 	background-color: #F3EEEE;
 }
+
 
 a.listed-post h2 {
 	margin: 50px 10px 20px 250px;

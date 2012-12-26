@@ -20,7 +20,7 @@ $results = $conn->query($sql);
 $post = $results->fetch_assoc();
 extract($post);
 echo '<div id="post">';
-echo "<h2><a href='./?p=public/home'>$post_title</h2>";
+echo "<h2><a href='./?p=public/post&id=$post_id'>$post_title</h2>";
 echo "<p>$post_text</p>";
 echo "</a>";
 echo '</div>';
